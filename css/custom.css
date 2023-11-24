@@ -1,0 +1,23 @@
+.hero-image {
+  width: 60vw;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+}
+
+#background {
+  /* background: url("../images/ashoke-chakra.png"); */
+  /* background-repeat: no-repeat;
+  background-position: center center; */
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, 0%);
+  /* width: 100vw;  */
+  height: 100vh;
+}
+
+.empty {
+  height: 50vh;
+  background-color: yellow;
+}
