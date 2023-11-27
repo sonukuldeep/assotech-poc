@@ -1,0 +1,97 @@
+/* general setup */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #333;
+  font-family: monospace, "Times New Roman", Times, serif, Helvetica, sans-serif,
+    Courier, monospace;
+}
+h4 {
+  margin: 5px 0;
+  text-align: center;
+}
+
+/* nav */
+nav {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  /* background-color: aliceblue; */
+}
+nav li {
+  list-style: none;
+  font-size: 3rem;
+  color: antiquewhite;
+  padding: 0.5rem 1rem;
+  transition: color 200ms, background-color 200ms;
+}
+
+nav li:hover {
+  background-color: antiquewhite;
+  color: #333;
+  cursor: pointer;
+}
+nav li:nth-child(2) {
+  flex-grow: 1;
+}
+
+nav li:nth-child(2):hover {
+  background-color: transparent;
+  cursor: default;
+}
+.container {
+  overflow: hidden;
+}
+.spacer {
+  height: 200px;
+}
+
+/* chakra */
+.box {
+  position: fixed;
+  z-index: -99;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+img.chakra {
+  width: 800px;
+  object-fit: cover;
+}
+
+/* carousel */
+.carousel {
+  margin: 0 auto;
+  scale: 0.5;
+}
+
+.camera_commands,
+.camera_bar {
+  display: none;
+}
+.camera_pag {
+  background-color: beige;
+}
+
+.slider-heading {
+  position: absolute;
+  font-size: 2.5rem;
+  color: antiquewhite;
+  top: 80%;
+  right: 2%;
+}
+
+/* media */
+@media (max-width: 580px) {
+  .camera_caption {
+    display: none !important;
+  }
+}
